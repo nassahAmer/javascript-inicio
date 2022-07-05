@@ -25,12 +25,13 @@ button {
     text-align: center;
 }
 
-#counter {
+#counter1, #counter2 {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
-#currentNumber {
+#currentNumber1, #currentNumber2 {
     margin: 0 20px;
     font-size: 16px;    
 }
