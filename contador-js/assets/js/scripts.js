@@ -6,16 +6,28 @@ var currentNumber = 0;
 // Função incremento
 function increment() {
     currentNumber = currentNumber + 1;
-    currentNumberWrapper.innerHTML = currentNumber;
+    if(currentNumber >= 0){
+        document.getElementById('currentNumber1').style.color = "black";
+        currentNumberWrapper.innerHTML = currentNumber;
+    } else {
+        currentNumberWrapper.innerHTML = currentNumber;
+    }
 }
 
 // Função decremento 
 function decrement() {
     currentNumber = currentNumber - 1;
-    currentNumberWrapper.innerHTML = currentNumber;
+    if(currentNumber < 0){
+        document.getElementById('currentNumber1').style.color = "red";
+        currentNumberWrapper.innerHTML = currentNumber;
+    } else {
+        currentNumberWrapper.innerHTML = currentNumber;
+    }
 }
 
-// Usando addEventListener
+/* 
+* Usando addEventListener
+*/
 const element1 = document.getElementById("aumentar");
 element1.addEventListener("click", aumentar);
 
