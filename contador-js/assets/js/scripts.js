@@ -7,8 +7,12 @@ var currentNumber = 0;
 function increment() {
     currentNumber = currentNumber + 1;
     if(currentNumber >= 0){
-        document.getElementById('currentNumber1').style.color = "black";
-        currentNumberWrapper.innerHTML = currentNumber;
+        if(currentNumber < 11){
+            document.getElementById('currentNumber1').style.color = "black";
+            currentNumberWrapper.innerHTML = currentNumber;
+        } else {
+            alert("Contador até 10 apenas!");
+        }
     } else {
         currentNumberWrapper.innerHTML = currentNumber;
     }
@@ -18,8 +22,12 @@ function increment() {
 function decrement() {
     currentNumber = currentNumber - 1;
     if(currentNumber < 0){
-        document.getElementById('currentNumber1').style.color = "red";
-        currentNumberWrapper.innerHTML = currentNumber;
+        if(currentNumber > -11) {
+            document.getElementById('currentNumber1').style.color = "red";
+            currentNumberWrapper.innerHTML = currentNumber;
+        } else {
+            alert("Contador até -10 apenas!");
+        }
     } else {
         currentNumberWrapper.innerHTML = currentNumber;
     }
@@ -38,9 +46,13 @@ var cont = 0;
 
 function aumentar() {
     cont = cont + 1;
-    if(cont >=0 ){
-        document.getElementById("currentNumber2").style.color = "black";
-        document.getElementById("currentNumber2").innerHTML = cont;
+    if(cont >=0){
+        if(cont < 11) {
+            document.getElementById("currentNumber2").style.color = "black";
+            document.getElementById("currentNumber2").innerHTML = cont;
+        } else {
+            alert("Contador até 10 apenas!");
+        }
     } else {
         document.getElementById("currentNumber2").innerHTML = cont;
     }
@@ -49,8 +61,12 @@ function aumentar() {
 function diminuir() {
     cont = cont - 1;
     if(cont < 0){
-        document.getElementById("currentNumber2").style.color = "red";
-        document.getElementById("currentNumber2").innerHTML = cont;
+        if(cont > -11) {
+            document.getElementById("currentNumber2").style.color = "red";
+            document.getElementById("currentNumber2").innerHTML = cont;
+        } else {
+            alert("Contador até -10 apenas!");
+        }
     } else {
         document.getElementById("currentNumber2").innerHTML = cont;
     }
