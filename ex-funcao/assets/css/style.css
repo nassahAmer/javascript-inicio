@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Righteous&family=Sarala:wght@400;700&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+#cx-geral {
+    border: 2px solid aqua;
+    background-color: aquamarine;
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    min-height: 200px;
+}
+
+.cx-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    margin-top: 5px;
+}
