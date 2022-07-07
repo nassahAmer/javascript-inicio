@@ -9,10 +9,12 @@
 body {
     color: rgb(10, 50, 50);
     margin-top: 15px;
+    background-color: #A5A692;
 }
 
 .cx_geral {
     box-shadow: 0 0 1em grey;
+    background-color: #BFB78F;
     display: flex;
     flex-direction: column;
     /* border: 2px solid red; */
@@ -20,17 +22,66 @@ body {
     text-align: center;
     width: 50%;
     min-width: 250px;
+    min-height: 100px;
     margin: auto;
+    padding: 5px 0;
 }
-#cx_lista li {
-    color: red;
+
+.cx_input {
+    margin: 5px 0;
+}
+
+#item {
+    background-color: #E5E5E5;
+    border: 2px solid #F2A71B;
+    color: rgb(10, 50, 50);
+    font-size: 14px;
+    max-width: 140px;
+    padding: 2px 3px;
+}
+
+#btn-adicionar {
+    background-color: #E5E5E5;
+    position: relative;
+    color: #F2A71B;
+    font-size: 14px;
+    text-decoration: none;
+    border: 2px solid #F2A71B;
+    padding: 2px 3px;
+    text-transform: uppercase;
+}
+
+#btn-adicionar:hover {
+    background-color: #A5A692;
+    color: #E5E5E5;
+}
+
+#check {
+    color: rgb(10, 50, 50);
+    margin-right: 5px;
+}
+
+#cx_lista {
+    margin: 10px 0;
+    min-width: 200px;
+}
+
+#lista {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 2px 0;
 }
 
 li {
     list-style: none;
 }
 
-:checked + label {
+#cx_lista input:checked + label {
     text-decoration: line-through;
     color: grey;
+}
+
+#cx_lista input:checked {
+    background: #fc5959;
 }
