@@ -8,18 +8,26 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div id="cx-geral">
-        <h1>Exemplo de Função</h1>
-        <div class="cx-inputs item">
-            <label for="num1" class="item">Digite o valor
-                <input name="num1" id="num1">
-            </label>
-            <label for="num2" class="item">Digite o valor
-                <input name="num2" id="num2">
-            </label>
-        </div>
-        <button type="button" id="btn" class="item">Comparar</button>
-    </div>  
+    <div id="tudo">
+        <div id="cx-geral">
+            <h1>Exemplo de Função</h1>
+            <div class="cx-inputs m5">
+                <label for="num1" class="m5 spcFlex">Digite o primeiro valor
+                    <input name="num1" id="num1" class="pl5">
+                </label>
+                <label for="num2" class="m5 spcFlex">Digite o segundo valor
+                    <input name="num2" id="num2" class="pl5">
+                </label>
+            </div>
+            <button type="button" onclick="verificar()" id="btn" class="m10">Verificar</button>
     
+            <div class="m10 cx-resposta">
+                <h3>Resultado da comparação:</h3>
+                <span id="span-resultado"></span>
+            </div>  
+        </div>
+    </div>
+    
+    <script src="assets/scripts/scripts.js"></script>
 </body>
 </html>

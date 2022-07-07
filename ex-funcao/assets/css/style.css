@@ -6,6 +6,12 @@
     text-decoration: none;
 }
 
+#tudo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 #cx-geral {
     border: 2px solid aqua;
     background-color: aquamarine;
@@ -21,8 +27,51 @@
 .cx-inputs {
     display: flex;
     flex-direction: column;
+    width: 90%;
 }
 
-.item {
+#btn {
+    border: none;
+    background-color: #E3E3E3;
+    border: 3px solid aqua;
+    color: rgb(10, 50, 10);
+    padding: 10px 40px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+#btn:hover {
+    border-color: aqua;
+    color: #E3E3E3;
+    background-color: rgb(0, 192, 192);
+}
+
+.cx-resposta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2px 15px;
+}
+
+input {
+    width: 20%;
+}
+
+.m5 {
     margin-top: 5px;
+}
+
+.m10 {
+    margin-top: 10px;
+}
+
+.pl5 {
+    padding-left: 5px;
+}
+
+.spcFlex {
+    display: flex;
+    justify-content: space-evenly;
 }
