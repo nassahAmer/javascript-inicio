@@ -1,4 +1,5 @@
 # javascript-inicio
+Pequenos exemplos de códigos focados em javascript
 
 ## Objetivo
 * Disponibilizar pequenos exemplos de códigos com foco na linguagem **javascript**
