@@ -10,5 +10,5 @@ Pequenos exemplos de códigos focados em javascript
 * **Verificando se uma palavra é palíndromo ::** [/palindromo](https://github.com/nassahAmer/javascript-inicio/tree/main/palindromo)
 * **Criando uma lista de tarefas ::** [/todo-list-js](https://github.com/nassahAmer/javascript-inicio/tree/main/todo-list-js)
 ##
->Oi! Sou o **Hassan Amer*
+>Oi! Sou o **Hassan Amer**  
 >Me chama lá no [LinkedIn](https://www.linkedin.com/in/hassanamer/)
